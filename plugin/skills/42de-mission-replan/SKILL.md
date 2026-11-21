@@ -1,6 +1,6 @@
 ---
 name: 42de-mission-replan
-description: This skill should be used when someone wants to know what to do about a robot failure in a 42de mission, how the mission should be re-planned, or wants to compare re-plan options and what-ifs, e.g. "the jacking AMR failed, what now?", "compare re-plans for the cost cascade", "should we wait for a12 or re-plan now", "what if a10 fails too".
+description: "This skill should be used when someone wants to know what to do about a robot failure in a 42de mission, how the mission should be re-planned, or wants to compare re-plan options and what-ifs, e.g. \"the jacking AMR failed, what now?\", \"compare re-plans for the cost cascade\", \"should we wait for a12 or re-plan now\", \"what if a10 fails too\"."
 ---
 
 # Mission re-plan (42de demo)

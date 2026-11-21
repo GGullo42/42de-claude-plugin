@@ -1,6 +1,6 @@
 ---
 name: try-42de-demo
-description: This skill should be used when someone wants to try, start, set up, test or troubleshoot the 42de demo or its connector, e.g. "try the 42de demo", "what can the 42de plugin do", "is the 42de connector working", "show me the 42de scenarios".
+description: "This skill should be used when someone wants to try, start, set up, test or troubleshoot the 42de demo or its connector, e.g. \"try the 42de demo\", \"what can the 42de plugin do\", \"is the 42de connector working\", \"show me the 42de scenarios\"."
 ---
 
 # Try the 42de demo

@@ -1,6 +1,6 @@
 ---
 name: 42de-mission-data
-description: This skill should be used whenever a question involves a 42de robot mission, its robots, tasks, phases, handovers or assignments in the 42de demo, e.g. "which robots are in the 42de demo mission", "what does t07 need", "which handovers are in phase 5", "who was planned for the syrup room". It explains the 42de mission data model, the seven demo tools, how to cite ids, and the safety rules that apply to every 42de task.
+description: "This skill should be used whenever a question involves a 42de robot mission, its robots, tasks, phases, handovers or assignments in the 42de demo, e.g. \"which robots are in the 42de demo mission\", \"what does t07 need\", \"which handovers are in phase 5\", \"who was planned for the syrup room\". It explains the 42de mission data model, the seven demo tools, how to cite ids, and the safety rules that apply to every 42de task."
 ---
 
 # Working with 42de mission data

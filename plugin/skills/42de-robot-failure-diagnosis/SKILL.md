@@ -1,6 +1,6 @@
 ---
 name: 42de-robot-failure-diagnosis
-description: This skill should be used when a robot in the 42de demo mission has failed, stopped, raised an error or alert, or is behaving abnormally and someone wants to know what happened and what it means for the mission, e.g. "what is wrong with robot a12", "why did a13 stop", "why did the forklift leave the mission", "which tasks are hit by the forklift alert".
+description: "This skill should be used when a robot in the 42de demo mission has failed, stopped, raised an error or alert, or is behaving abnormally and someone wants to know what happened and what it means for the mission, e.g. \"what is wrong with robot a12\", \"why did a13 stop\", \"why did the forklift leave the mission\", \"which tasks are hit by the forklift alert\"."
 ---
 
 # Robot failure diagnosis (42de demo)
