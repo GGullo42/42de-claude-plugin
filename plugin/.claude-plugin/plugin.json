@@ -6,6 +6,7 @@
     "name": "42de"
   },
   "homepage": "https://42de.tech",
+  "documentationUrl": "https://github.com/GGullo42/42de-claude-plugin/tree/main/plugin#readme",
   "privacyPolicyUrl": "https://42de.tech/privacy/claude-demo",
   "supportUrl": "https://42de.tech/support",
   "license": "Apache-2.0",
@@ -16,5 +17,6 @@
     "mission-planning",
     "re-planning",
     "demo"
-  ]
+  ],
+  "icon": "./.claude-plugin/icon.png"
 }
