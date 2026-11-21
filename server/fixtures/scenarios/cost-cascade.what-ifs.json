@@ -1,0 +1,1112 @@
+[
+ {
+  "what_if": {
+   "id": "none",
+   "kind": "none",
+   "description": "42de's own re-plan proposal"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a1",
+   "kind": "drop_robot",
+   "description": "Wheeled Humanoid (a1) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a2",
+   "kind": "drop_robot",
+   "description": "Biped Humanoid (a2) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 187.8,
+   "total_tour_distance": 196.9,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t24",
+    "from_robot": "a2",
+    "to_robot": "a1",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 57.6
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a3",
+   "kind": "drop_robot",
+   "description": "Lab Cobot 5 kg (a3) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a4",
+   "kind": "drop_robot",
+   "description": "Labeller Cobot 12 kg (a4) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a5",
+   "kind": "drop_robot",
+   "description": "Palletizer Cobot 25 kg (a5) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a6",
+   "kind": "drop_robot",
+   "description": "CNC Composite Robot (a6) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a7",
+   "kind": "drop_robot",
+   "description": "Semicon Composite Robot (a7) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a8",
+   "kind": "drop_robot",
+   "description": "Stacker Forklift 1400 kg (a8) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a9",
+   "kind": "drop_robot",
+   "description": "Pallet Truck 1500 kg (a9) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a10",
+   "kind": "drop_robot",
+   "description": "Counterbalanced Stacker 1500 kg (a10) is also unavailable from the current phase"
+  },
+  "outcome": "infeasible",
+  "infeasible_reason": "42de found no feasible plan under the mission constraints",
+  "kpis": null,
+  "diffs": [],
+  "changed_handovers": [],
+  "uses_capability_fallback": [],
+  "routes": []
+ },
+ {
+  "what_if": {
+   "id": "drop:a11",
+   "kind": "drop_robot",
+   "description": "Lifting AMR 300 kg (a11) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a12",
+   "kind": "drop_robot",
+   "description": "Jacking AMR 1200 kg (a12) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 184.5,
+   "total_tour_distance": 189.9,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a8",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a8"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t22"
+  ],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 95.9
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t21",
+   "kind": "block_task",
+   "description": "Task t21 (Retrieve order pallet from the high-bay) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 124.5,
+   "total_tour_distance": 118.3,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t21",
+    "from_robot": "a10",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     null,
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t23"
+    ],
+    "distance": 24.7
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 67.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t22",
+   "kind": "block_task",
+   "description": "Task t22 (Stage order pallet at the dock) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 88.3,
+   "total_tour_distance": 88.7,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 2,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": null,
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     null
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t23",
+     "t21"
+    ],
+    "distance": 62.3
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t23",
+   "kind": "block_task",
+   "description": "Task t23 (Load the outbound truck) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 128.9,
+   "total_tour_distance": 145.7,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t23",
+    "from_robot": "a10",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21"
+    ],
+    "distance": 47.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t24",
+   "kind": "block_task",
+   "description": "Task t24 (Check dock seal & load securing) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 128.2,
+   "total_tour_distance": 139.3,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 2,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t24",
+    "from_robot": "a2",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ }
+]

@@ -1,0 +1,182 @@
+{
+ "id": "mini",
+ "title": "Robot Two fails",
+ "summary": "Robot Two failed.",
+ "failed_robot_id": "a2",
+ "current_phase_id": "p1",
+ "completed_task_ids": [
+  "t1"
+ ],
+ "positions": [
+  {
+   "robot_id": "a1",
+   "x": 1.0,
+   "y": 1.0
+  },
+  {
+   "robot_id": "a2",
+   "x": 10.0,
+   "y": 0.0
+  }
+ ],
+ "robot_status": [
+  {
+   "robot_id": "a1",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a2",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "MANUAL",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 50,
+   "errors": [
+    {
+     "errorType": "motor",
+     "errorLevel": "FATAL",
+     "errorDescription": "Motor fault"
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "id": "mini-1",
+   "robot_id": "a2",
+   "level": "FATAL",
+   "title": "Robot Two stopped",
+   "affected_task_ids": [
+    "t2"
+   ],
+   "affected_handovers": [
+    {
+     "predecessor_task_id": "t1",
+     "successor_task_id": "t2",
+     "meet_label": "Box: one -> two"
+    }
+   ]
+  }
+ ],
+ "baseline": {
+  "what_if": null,
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 10.0,
+   "total_tour_distance": 12.0,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 2,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t2",
+    "from_robot": "a2",
+    "to_robot": "a1",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t1",
+    "successor_task_id": "t2",
+    "meet_label": "Box: one -> two",
+    "before": [
+     "a1",
+     "a2"
+    ],
+    "after": [
+     "a1",
+     "a1"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t1",
+     "t3"
+    ],
+    "distance": 7.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p1",
+    "task_ids": [
+     "t2",
+     "t3"
+    ],
+    "distance": 5.0
+   }
+  ]
+ },
+ "proposal": {
+  "what_if": null,
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 10.0,
+   "total_tour_distance": 12.0,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 2,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t2",
+    "from_robot": "a2",
+    "to_robot": "a1",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t1",
+    "successor_task_id": "t2",
+    "meet_label": "Box: one -> two",
+    "before": [
+     "a1",
+     "a2"
+    ],
+    "after": [
+     "a1",
+     "a1"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t1",
+     "t3"
+    ],
+    "distance": 7.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p1",
+    "task_ids": [
+     "t2",
+     "t3"
+    ],
+    "distance": 5.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,9040 @@
+[
+ {
+  "what_if": {
+   "id": "none",
+   "kind": "none",
+   "description": "42de's own re-plan proposal"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 695.4,
+   "total_tour_distance": 813.2,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a1",
+   "kind": "drop_robot",
+   "description": "Wheeled Humanoid (a1) is also unavailable from the current phase"
+  },
+  "outcome": "infeasible",
+  "infeasible_reason": "t07 (Tip sugar sacks into the dissolver) needs 2 robots (wheeled_humanoid/biped_humanoid), 1 available",
+  "kpis": null,
+  "diffs": [],
+  "changed_handovers": [],
+  "uses_capability_fallback": [],
+  "routes": []
+ },
+ {
+  "what_if": {
+   "id": "drop:a2",
+   "kind": "drop_robot",
+   "description": "Biped Humanoid (a2) is also unavailable from the current phase"
+  },
+  "outcome": "infeasible",
+  "infeasible_reason": "t07 (Tip sugar sacks into the dissolver) needs 2 robots (wheeled_humanoid/biped_humanoid), 1 available",
+  "kpis": null,
+  "diffs": [],
+  "changed_handovers": [],
+  "uses_capability_fallback": [],
+  "routes": []
+ },
+ {
+  "what_if": {
+   "id": "drop:a3",
+   "kind": "drop_robot",
+   "description": "Lab Cobot 5 kg (a3) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 744.6,
+   "total_tour_distance": 825.5,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t13",
+    "from_robot": "a7",
+    "to_robot": "a6",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t14",
+    "from_robot": "a3",
+    "to_robot": "a7",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t13",
+    "successor_task_id": "t14",
+    "meet_label": "Bottle samples: composite robot -> lab cobot",
+    "before": [
+     "a7",
+     "a3"
+    ],
+    "after": [
+     "a6",
+     "a7"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t14"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p3",
+    "task_ids": [
+     "t13"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14",
+     "t15"
+    ],
+    "distance": 49.6
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a4",
+   "kind": "drop_robot",
+   "description": "Labeller Cobot 12 kg (a4) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 708.6,
+   "total_tour_distance": 838.0,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t11",
+    "from_robot": "a4",
+    "to_robot": "a5",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t10",
+    "successor_task_id": "t11",
+    "meet_label": "Label reels: AMR -> labeller cobot",
+    "before": [
+     "a11",
+     "a4"
+    ],
+    "after": [
+     "a11",
+     "a5"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t11"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 15.6
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 16.0
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a5",
+   "kind": "drop_robot",
+   "description": "Palletizer Cobot 25 kg (a5) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 758.2,
+   "total_tour_distance": 833.5,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t17",
+    "from_robot": "a5",
+    "to_robot": "a6",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t17",
+    "successor_task_id": "t18",
+    "meet_label": "Full pallet: palletizer cobot -> pallet truck",
+    "before": [
+     "a5",
+     "a10"
+    ],
+    "after": [
+     "a6",
+     "a10"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t17"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 23.1
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a6",
+   "kind": "drop_robot",
+   "description": "CNC Composite Robot (a6) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 670.4,
+   "total_tour_distance": 804.2,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t09",
+    "from_robot": "a6",
+    "to_robot": "a3",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t09"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 19.0
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 19.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a7",
+   "kind": "drop_robot",
+   "description": "Semicon Composite Robot (a7) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 755.1,
+   "total_tour_distance": 772.4,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t08",
+    "from_robot": "a7",
+    "to_robot": "a6",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t13",
+    "from_robot": "a7",
+    "to_robot": "a6",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t15",
+    "from_robot": "a7",
+    "to_robot": "a2",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t13",
+    "successor_task_id": "t14",
+    "meet_label": "Bottle samples: composite robot -> lab cobot",
+    "before": [
+     "a7",
+     "a3"
+    ],
+    "after": [
+     "a6",
+     "a3"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08",
+     "t09"
+    ],
+    "distance": 43.4
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15"
+    ],
+    "distance": 32.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p3",
+    "task_ids": [
+     "t13"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 27.3
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a8",
+   "kind": "drop_robot",
+   "description": "Stacker Forklift 1400 kg (a8) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 759.0,
+   "total_tour_distance": 922.7,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t03",
+    "from_robot": "a8",
+    "to_robot": "a10",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t03"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 85.0
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 77.5
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a9",
+   "kind": "drop_robot",
+   "description": "Pallet Truck 1500 kg (a9) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 695.4,
+   "total_tour_distance": 813.2,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a10",
+   "kind": "drop_robot",
+   "description": "Counterbalanced Stacker 1500 kg (a10) is also unavailable from the current phase"
+  },
+  "outcome": "infeasible",
+  "infeasible_reason": "42de found no feasible plan under the mission constraints",
+  "kpis": null,
+  "diffs": [],
+  "changed_handovers": [],
+  "uses_capability_fallback": [],
+  "routes": []
+ },
+ {
+  "what_if": {
+   "id": "drop:a11",
+   "kind": "drop_robot",
+   "description": "Lifting AMR 300 kg (a11) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 692.0,
+   "total_tour_distance": 759.0,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a9",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t10",
+    "from_robot": "a11",
+    "to_robot": "a5",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a4",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a9"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t10",
+    "successor_task_id": "t11",
+    "meet_label": "Label reels: AMR -> labeller cobot",
+    "before": [
+     "a11",
+     "a4"
+    ],
+    "after": [
+     "a5",
+     "a4"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t05",
+   "t10",
+   "t16"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a9",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 47.1
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 16.3
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 29.2
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 16.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "drop:a13",
+   "kind": "drop_robot",
+   "description": "E-type Latent Forklift (a13) is also unavailable from the current phase"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 727.6,
+   "total_tour_distance": 820.3,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a8",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a9",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a8",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a9"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [
+   "t06",
+   "t22"
+  ],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 20.4
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 39.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a9",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 111.9
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t03",
+   "kind": "block_task",
+   "description": "Task t03 (Put caps & labels away in raw store) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 671.0,
+   "total_tour_distance": 791.3,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t03",
+    "from_robot": "a8",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t04",
+   "kind": "block_task",
+   "description": "Task t04 (Verify inbound labels & lot numbers) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 661.3,
+   "total_tour_distance": 773.0,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t04",
+    "from_robot": "a1",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 35.1
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t05",
+   "kind": "block_task",
+   "description": "Task t05 (Feed preforms to the blow-moulder) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 641.2,
+   "total_tour_distance": 735.9,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": null,
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     null
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 18.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 39.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 79.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t06",
+   "kind": "block_task",
+   "description": "Task t06 (Deliver sugar pallet to the syrup room) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 613.3,
+   "total_tour_distance": 707.5,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": null,
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     null,
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 56.1
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 31.9
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t07",
+   "kind": "block_task",
+   "description": "Task t07 (Tip sugar sacks into the dissolver) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 600.2,
+   "total_tour_distance": 711.2,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t07",
+    "from_robot": "a1,a2",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     null
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 80.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 55.3
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 35.1
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 49.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t08",
+   "kind": "block_task",
+   "description": "Task t08 (Dose flavour concentrate) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 684.0,
+   "total_tour_distance": 793.6,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t08",
+    "from_robot": "a7",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 45.4
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t09",
+   "kind": "block_task",
+   "description": "Task t09 (Restock the cap hopper) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 659.4,
+   "total_tour_distance": 768.9,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t08",
+    "from_robot": "a7",
+    "to_robot": "a6",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t09",
+    "from_robot": "a6",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 18.4
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 45.4
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t10",
+   "kind": "block_task",
+   "description": "Task t10 (Bring label reels line-side) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 661.4,
+   "total_tour_distance": 791.0,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t10",
+    "from_robot": "a11",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t10",
+    "successor_task_id": "t11",
+    "meet_label": "Label reels: AMR -> labeller cobot",
+    "before": [
+     "a11",
+     "a4"
+    ],
+    "after": [
+     null,
+     "a4"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 0.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 3.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 39.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 79.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t11",
+   "kind": "block_task",
+   "description": "Task t11 (Splice a new label reel) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 694.9,
+   "total_tour_distance": 806.7,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t11",
+    "from_robot": "a4",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t10",
+    "successor_task_id": "t11",
+    "meet_label": "Label reels: AMR -> labeller cobot",
+    "before": [
+     "a11",
+     "a4"
+    ],
+    "after": [
+     "a11",
+     null
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 27.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 27.9
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t12",
+   "kind": "block_task",
+   "description": "Task t12 (Patrol & inspect filler to labeller) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 633.0,
+   "total_tour_distance": 785.4,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t12",
+    "from_robot": "a1",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t13",
+   "kind": "block_task",
+   "description": "Task t13 (Pull bottle samples at the filler) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 683.2,
+   "total_tour_distance": 783.3,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t13",
+    "from_robot": "a7",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t13",
+    "successor_task_id": "t14",
+    "meet_label": "Bottle samples: composite robot -> lab cobot",
+    "before": [
+     "a7",
+     "a3"
+    ],
+    "after": [
+     null,
+     "a3"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 0.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15"
+    ],
+    "distance": 29.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t14",
+   "kind": "block_task",
+   "description": "Task t14 (Brix & CO2 test in the QC lab) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 694.9,
+   "total_tour_distance": 783.5,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t14",
+    "from_robot": "a3",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t13",
+    "successor_task_id": "t14",
+    "meet_label": "Bottle samples: composite robot -> lab cobot",
+    "before": [
+     "a7",
+     "a3"
+    ],
+    "after": [
+     "a7",
+     null
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t13",
+     "t15"
+    ],
+    "distance": 29.5
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t15",
+   "kind": "block_task",
+   "description": "Task t15 (Fill-level & cap-torque vision audit) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 674.5,
+   "total_tour_distance": 795.1,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t15",
+    "from_robot": "a7",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t13"
+    ],
+    "distance": 37.0
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t16",
+   "kind": "block_task",
+   "description": "Task t16 (Swap the empty preform cart) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 641.9,
+   "total_tour_distance": 793.6,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": null,
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 12.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 79.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t17",
+   "kind": "block_task",
+   "description": "Task t17 (Palletize finished cases) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 694.9,
+   "total_tour_distance": 803.2,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 10,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t17",
+    "from_robot": "a5",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t17",
+    "successor_task_id": "t18",
+    "meet_label": "Full pallet: palletizer cobot -> pallet truck",
+    "before": [
+     "a5",
+     "a10"
+    ],
+    "after": [
+     null,
+     "a10"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 23.9
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t18",
+   "kind": "block_task",
+   "description": "Task t18 (Take full pallet to the stretch wrapper) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 668.6,
+   "total_tour_distance": 759.7,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t18",
+    "from_robot": "a10",
+    "to_robot": null,
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t17",
+    "successor_task_id": "t18",
+    "meet_label": "Full pallet: palletizer cobot -> pallet truck",
+    "before": [
+     "a5",
+     "a10"
+    ],
+    "after": [
+     "a5",
+     null
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 0.0
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 47.9
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t19",
+   "kind": "block_task",
+   "description": "Task t19 (Return empty pallets to the palletizer) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 662.0,
+   "total_tour_distance": 810.0,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 79.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t20",
+   "kind": "block_task",
+   "description": "Task t20 (Label & scan the wrapped pallet) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 641.2,
+   "total_tour_distance": 786.2,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t12",
+    "from_robot": "a1",
+    "to_robot": "a2",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t20",
+    "from_robot": "a2",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 57.6
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t21",
+   "kind": "block_task",
+   "description": "Task t21 (Retrieve order pallet from the high-bay) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 683.0,
+   "total_tour_distance": 766.7,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t21",
+    "from_robot": "a10",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     null,
+     "a13"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t23"
+    ],
+    "distance": 24.7
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 28.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t22",
+   "kind": "block_task",
+   "description": "Task t22 (Stage order pallet at the dock) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 675.5,
+   "total_tour_distance": 776.1,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     null
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t23",
+     "t21"
+    ],
+    "distance": 62.3
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t23",
+   "kind": "block_task",
+   "description": "Task t23 (Load the outbound truck) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 664.2,
+   "total_tour_distance": 793.2,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t23",
+    "from_robot": "a10",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21"
+    ],
+    "distance": 47.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "block:t24",
+   "kind": "block_task",
+   "description": "Task t24 (Check dock seal & load securing) is skipped"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 623.9,
+   "total_tour_distance": 760.4,
+   "tasks_covered": 21,
+   "open_tasks": 21,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t12",
+    "from_robot": "a1",
+    "to_robot": "a2",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t24",
+    "from_robot": "a2",
+    "to_robot": null,
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 31.8
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "wait:p2",
+   "kind": "wait_for_robot",
+   "description": "Jacking AMR 1200 kg (a12) comes back from phase p2 (Syrup room & line feed)"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 620.7,
+   "total_tour_distance": 750.0,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 12,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 36.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 29.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 31.9
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "wait:p3",
+   "kind": "wait_for_robot",
+   "description": "Jacking AMR 1200 kg (a12) comes back from phase p3 (Bottling & quality control)"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 650.1,
+   "total_tour_distance": 800.6,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 12,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 7.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 12.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 79.2
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "wait:p4",
+   "kind": "wait_for_robot",
+   "description": "Jacking AMR 1200 kg (a12) comes back from phase p4 (End of line)"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 744.8,
+   "total_tour_distance": 854.9,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 12,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 73.6
+   }
+  ]
+ },
+ {
+  "what_if": {
+   "id": "wait:p5",
+   "kind": "wait_for_robot",
+   "description": "Jacking AMR 1200 kg (a12) comes back from phase p5 (Outbound dispatch)"
+  },
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 744.8,
+   "total_tour_distance": 854.9,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 12,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   },
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   },
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 73.6
+   }
+  ]
+ }
+]

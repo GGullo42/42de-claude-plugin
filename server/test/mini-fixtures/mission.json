@@ -1,0 +1,130 @@
+{
+ "phases": [
+  {
+   "id": "p1",
+   "name": "Only phase",
+   "order": 0
+  }
+ ],
+ "robots": [
+  {
+   "id": "a1",
+   "name": "Robot One",
+   "type": "amr_lift",
+   "start": {
+    "x": 0.0,
+    "y": 0.0
+   },
+   "max_tasks": 3
+  },
+  {
+   "id": "a2",
+   "name": "Robot Two",
+   "type": "amr_jacking",
+   "start": {
+    "x": 10.0,
+    "y": 0.0
+   },
+   "max_tasks": 3
+  }
+ ],
+ "tasks": [
+  {
+   "id": "t1",
+   "name": "Pick",
+   "phase_id": "p1",
+   "x": 1.0,
+   "y": 1.0,
+   "team_size": 1,
+   "priority": 1.0,
+   "allowed_types": [
+    "amr_lift",
+    "amr_jacking"
+   ]
+  },
+  {
+   "id": "t2",
+   "name": "Carry",
+   "phase_id": "p1",
+   "x": 5.0,
+   "y": 1.0,
+   "team_size": 1,
+   "priority": 1.0,
+   "allowed_types": [
+    "amr_lift",
+    "amr_jacking"
+   ]
+  },
+  {
+   "id": "t3",
+   "name": "Drop",
+   "phase_id": "p1",
+   "x": 9.0,
+   "y": 1.0,
+   "team_size": 2,
+   "priority": 2.0,
+   "allowed_types": [
+    "amr_lift",
+    "amr_jacking"
+   ]
+  }
+ ],
+ "handovers": [
+  {
+   "predecessor_task_id": "t1",
+   "successor_task_id": "t2",
+   "meet_label": "Box: one -> two"
+  }
+ ],
+ "original_plan": {
+  "assignments": [
+   {
+    "task_id": "t1",
+    "robot_ids": [
+     "a1"
+    ]
+   },
+   {
+    "task_id": "t2",
+    "robot_ids": [
+     "a2"
+    ]
+   },
+   {
+    "task_id": "t3",
+    "robot_ids": [
+     "a1",
+     "a2"
+    ]
+   }
+  ],
+  "kpis": {
+   "total_cost": 10.0,
+   "total_tour_distance": 12.0,
+   "tasks_covered": 3,
+   "open_tasks": 3,
+   "agents_used": 2,
+   "violations": []
+  },
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t1",
+     "t3"
+    ],
+    "distance": 7.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p1",
+    "task_ids": [
+     "t2",
+     "t3"
+    ],
+    "distance": 5.0
+   }
+  ]
+ }
+}

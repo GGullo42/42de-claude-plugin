@@ -1,0 +1,669 @@
+{
+ "id": "amr-error-clean",
+ "title": "Jacking AMR drive fault in inbound receiving",
+ "summary": "Jacking AMR 1200 kg (a12) stopped with a fault during Inbound receiving (p1) (FATAL driveFault: Drive motor overcurrent, robot stopped); 2 tasks done, 22 open. 42de's re-plan covers every open task (cost 577.7 -> 695.4, distance 681.4 -> 813.2).",
+ "failed_robot_id": "a12",
+ "current_phase_id": "p1",
+ "completed_task_ids": [
+  "t01",
+  "t02"
+ ],
+ "positions": [
+  {
+   "robot_id": "a1",
+   "x": 5.0,
+   "y": 50.0
+  },
+  {
+   "robot_id": "a2",
+   "x": 95.0,
+   "y": 58.0
+  },
+  {
+   "robot_id": "a3",
+   "x": 65.0,
+   "y": 52.0
+  },
+  {
+   "robot_id": "a4",
+   "x": 72.0,
+   "y": 28.0
+  },
+  {
+   "robot_id": "a5",
+   "x": 85.0,
+   "y": 30.0
+  },
+  {
+   "robot_id": "a6",
+   "x": 30.0,
+   "y": 58.0
+  },
+  {
+   "robot_id": "a7",
+   "x": 50.0,
+   "y": 38.0
+  },
+  {
+   "robot_id": "a8",
+   "x": 5.0,
+   "y": 24.0
+  },
+  {
+   "robot_id": "a9",
+   "x": 5.0,
+   "y": 12.0
+  },
+  {
+   "robot_id": "a10",
+   "x": 105.0,
+   "y": 40.0
+  },
+  {
+   "robot_id": "a11",
+   "x": 80.0,
+   "y": 10.0
+  },
+  {
+   "robot_id": "a12",
+   "x": 45.0,
+   "y": 10.0
+  },
+  {
+   "robot_id": "a13",
+   "x": 108.0,
+   "y": 4.0
+  }
+ ],
+ "robot_status": [
+  {
+   "robot_id": "a1",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a2",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a3",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a4",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a5",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a6",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a7",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a8",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a9",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a10",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a11",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a12",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "MANUAL",
+   "safed": true,
+   "fallen": false,
+   "battery_pct": 64,
+   "errors": [
+    {
+     "errorType": "driveFault",
+     "errorLevel": "FATAL",
+     "errorDescription": "Drive motor overcurrent, robot stopped"
+    }
+   ]
+  },
+  {
+   "robot_id": "a13",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  }
+ ],
+ "alerts": [
+  {
+   "id": "amr-error-clean-1",
+   "robot_id": "a12",
+   "level": "FATAL",
+   "title": "Jacking AMR 1200 kg (a12): Drive motor overcurrent, robot stopped",
+   "affected_task_ids": [
+    "t05",
+    "t06",
+    "t16"
+   ],
+   "affected_handovers": [
+    {
+     "predecessor_task_id": "t02",
+     "successor_task_id": "t05",
+     "meet_label": "Preforms: forklift -> AMR at the inbound buffer"
+    },
+    {
+     "predecessor_task_id": "t06",
+     "successor_task_id": "t07",
+     "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver"
+    }
+   ]
+  }
+ ],
+ "baseline": {
+  "what_if": null,
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 577.7,
+   "total_tour_distance": 681.4,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 12,
+   "violations": []
+  },
+  "diffs": [],
+  "changed_handovers": [],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 69.1
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 18.1
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 27.0
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 29.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 12.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 37.6
+   }
+  ]
+ },
+ "proposal": {
+  "what_if": null,
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 695.4,
+   "total_tour_distance": 813.2,
+   "tasks_covered": 22,
+   "open_tasks": 22,
+   "agents_used": 11,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t05",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t06",
+    "from_robot": "a12",
+    "to_robot": "a13",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t16",
+    "from_robot": "a12",
+    "to_robot": "a11",
+    "was_failed_robots": true
+   },
+   {
+    "task_id": "t19",
+    "from_robot": "a11",
+    "to_robot": "a13",
+    "was_failed_robots": false
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t02",
+    "successor_task_id": "t05",
+    "meet_label": "Preforms: forklift -> AMR at the inbound buffer",
+    "before": [
+     "a8",
+     "a12"
+    ],
+    "after": [
+     "a8",
+     "a11"
+    ]
+   },
+   {
+    "predecessor_task_id": "t06",
+    "successor_task_id": "t07",
+    "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver",
+    "before": [
+     "a12",
+     "a1,a2"
+    ],
+    "after": [
+     "a13",
+     "a1,a2"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t03"
+    ],
+    "distance": 21.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 102.7
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 29.3
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 82.6
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 28.5
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 50.6
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 31.9
+   }
+  ]
+ }
+}

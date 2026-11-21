@@ -1,0 +1,359 @@
+{
+ "id": "cost-cascade",
+ "title": "Latent forklift battery critical during outbound dispatch",
+ "summary": "E-type Latent Forklift (a13) left the mission to recharge with a critically low battery during Outbound dispatch (p5) (CRITICAL batteryLow: Battery at 7 %, robot returning to charger); 20 tasks done, 4 open. 42de's re-plan covers every open task (cost 108.2 -> 156.7, distance 131.6 -> 165.7).",
+ "failed_robot_id": "a13",
+ "current_phase_id": "p5",
+ "completed_task_ids": [
+  "t01",
+  "t02",
+  "t03",
+  "t04",
+  "t05",
+  "t06",
+  "t07",
+  "t08",
+  "t09",
+  "t10",
+  "t11",
+  "t12",
+  "t13",
+  "t14",
+  "t15",
+  "t16",
+  "t17",
+  "t18",
+  "t19",
+  "t20"
+ ],
+ "positions": [
+  {
+   "robot_id": "a1",
+   "x": 62.0,
+   "y": 30.0
+  },
+  {
+   "robot_id": "a2",
+   "x": 93.0,
+   "y": 23.0
+  },
+  {
+   "robot_id": "a3",
+   "x": 65.0,
+   "y": 52.0
+  },
+  {
+   "robot_id": "a4",
+   "x": 72.0,
+   "y": 28.0
+  },
+  {
+   "robot_id": "a5",
+   "x": 85.0,
+   "y": 30.0
+  },
+  {
+   "robot_id": "a6",
+   "x": 65.0,
+   "y": 33.0
+  },
+  {
+   "robot_id": "a7",
+   "x": 66.0,
+   "y": 27.0
+  },
+  {
+   "robot_id": "a8",
+   "x": 20.0,
+   "y": 40.0
+  },
+  {
+   "robot_id": "a9",
+   "x": 5.0,
+   "y": 12.0
+  },
+  {
+   "robot_id": "a10",
+   "x": 92.0,
+   "y": 20.0
+  },
+  {
+   "robot_id": "a11",
+   "x": 84.0,
+   "y": 25.0
+  },
+  {
+   "robot_id": "a12",
+   "x": 45.0,
+   "y": 17.0
+  },
+  {
+   "robot_id": "a13",
+   "x": 108.0,
+   "y": 4.0
+  }
+ ],
+ "robot_status": [
+  {
+   "robot_id": "a1",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a2",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a3",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a4",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a5",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a6",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a7",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a8",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a9",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a10",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a11",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a12",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 80,
+   "errors": []
+  },
+  {
+   "robot_id": "a13",
+   "connected": true,
+   "posture": null,
+   "operating_mode": "AUTOMATIC",
+   "safed": false,
+   "fallen": false,
+   "battery_pct": 7,
+   "errors": [
+    {
+     "errorType": "batteryLow",
+     "errorLevel": "CRITICAL",
+     "errorDescription": "Battery at 7 %, robot returning to charger"
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "id": "cost-cascade-1",
+   "robot_id": "a13",
+   "level": "CRITICAL",
+   "title": "E-type Latent Forklift (a13): Battery at 7 %, robot returning to charger",
+   "affected_task_ids": [
+    "t22"
+   ],
+   "affected_handovers": [
+    {
+     "predecessor_task_id": "t21",
+     "successor_task_id": "t22",
+     "meet_label": "Order pallet: high-bay stacker -> latent forklift"
+    }
+   ]
+  }
+ ],
+ "baseline": {
+  "what_if": null,
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 108.2,
+   "total_tour_distance": 131.6,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [],
+  "changed_handovers": [],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 37.6
+   }
+  ]
+ },
+ "proposal": {
+  "what_if": null,
+  "outcome": "feasible",
+  "infeasible_reason": null,
+  "kpis": {
+   "total_cost": 156.7,
+   "total_tour_distance": 165.7,
+   "tasks_covered": 4,
+   "open_tasks": 4,
+   "agents_used": 3,
+   "violations": []
+  },
+  "diffs": [
+   {
+    "task_id": "t22",
+    "from_robot": "a13",
+    "to_robot": "a12",
+    "was_failed_robots": true
+   }
+  ],
+  "changed_handovers": [
+   {
+    "predecessor_task_id": "t21",
+    "successor_task_id": "t22",
+    "meet_label": "Order pallet: high-bay stacker -> latent forklift",
+    "before": [
+     "a10",
+     "a13"
+    ],
+    "after": [
+     "a10",
+     "a12"
+    ]
+   }
+  ],
+  "uses_capability_fallback": [],
+  "routes": [
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 71.7
+   }
+  ]
+ }
+}

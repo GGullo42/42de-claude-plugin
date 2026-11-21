@@ -1,0 +1,17 @@
+{
+  "name": "42de",
+  "owner": { "name": "42de" },
+  "metadata": {
+    "description": "42de plugins for Claude."
+  },
+  "plugins": [
+    {
+      "name": "42de",
+      "source": "./plugin",
+      "description": "Demo of 42de mission re-planning with simulated beverage-plant data. Read-only.",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "keywords": ["manufacturing", "robotics", "42de", "demo"]
+    }
+  ]
+}

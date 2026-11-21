@@ -1,0 +1,11 @@
+# original drafts (binaries, kept locally for reference)
+*.zip
+*.plugin
+node_modules/
+dist/
+.env
+.superpowers/
+deploy/out/
+
+.DS_Store
+__pycache__/

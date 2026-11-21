@@ -1,0 +1,839 @@
+{
+ "phases": [
+  {
+   "id": "p1",
+   "name": "Inbound receiving",
+   "order": 0
+  },
+  {
+   "id": "p2",
+   "name": "Syrup room & line feed",
+   "order": 1
+  },
+  {
+   "id": "p3",
+   "name": "Bottling & quality control",
+   "order": 2
+  },
+  {
+   "id": "p4",
+   "name": "End of line",
+   "order": 3
+  },
+  {
+   "id": "p5",
+   "name": "Outbound dispatch",
+   "order": 4
+  }
+ ],
+ "robots": [
+  {
+   "id": "a1",
+   "name": "Wheeled Humanoid",
+   "type": "wheeled_humanoid",
+   "start": {
+    "x": 5.0,
+    "y": 50.0
+   },
+   "max_tasks": 4
+  },
+  {
+   "id": "a2",
+   "name": "Biped Humanoid",
+   "type": "biped_humanoid",
+   "start": {
+    "x": 95.0,
+    "y": 58.0
+   },
+   "max_tasks": 5
+  },
+  {
+   "id": "a3",
+   "name": "Lab Cobot 5 kg",
+   "type": "cobot_5kg",
+   "start": {
+    "x": 65.0,
+    "y": 52.0
+   },
+   "max_tasks": 2
+  },
+  {
+   "id": "a4",
+   "name": "Labeller Cobot 12 kg",
+   "type": "cobot_12kg",
+   "start": {
+    "x": 72.0,
+    "y": 28.0
+   },
+   "max_tasks": 2
+  },
+  {
+   "id": "a5",
+   "name": "Palletizer Cobot 25 kg",
+   "type": "cobot_25kg",
+   "start": {
+    "x": 85.0,
+    "y": 30.0
+   },
+   "max_tasks": 2
+  },
+  {
+   "id": "a6",
+   "name": "CNC Composite Robot",
+   "type": "composite_cnc",
+   "start": {
+    "x": 30.0,
+    "y": 58.0
+   },
+   "max_tasks": 4
+  },
+  {
+   "id": "a7",
+   "name": "Semicon Composite Robot",
+   "type": "composite_semi",
+   "start": {
+    "x": 50.0,
+    "y": 38.0
+   },
+   "max_tasks": 4
+  },
+  {
+   "id": "a8",
+   "name": "Stacker Forklift 1400 kg",
+   "type": "forklift_stacker",
+   "start": {
+    "x": 14.0,
+    "y": 30.0
+   },
+   "max_tasks": 4
+  },
+  {
+   "id": "a9",
+   "name": "Pallet Truck 1500 kg",
+   "type": "forklift_pallet",
+   "start": {
+    "x": 10.0,
+    "y": 4.0
+   },
+   "max_tasks": 5
+  },
+  {
+   "id": "a10",
+   "name": "Counterbalanced Stacker 1500 kg",
+   "type": "forklift_cb",
+   "start": {
+    "x": 105.0,
+    "y": 40.0
+   },
+   "max_tasks": 4
+  },
+  {
+   "id": "a11",
+   "name": "Lifting AMR 300 kg",
+   "type": "amr_lift",
+   "start": {
+    "x": 80.0,
+    "y": 10.0
+   },
+   "max_tasks": 5
+  },
+  {
+   "id": "a12",
+   "name": "Jacking AMR 1200 kg",
+   "type": "amr_jacking",
+   "start": {
+    "x": 45.0,
+    "y": 10.0
+   },
+   "max_tasks": 5
+  },
+  {
+   "id": "a13",
+   "name": "E-type Latent Forklift",
+   "type": "amr_latent_forklift",
+   "start": {
+    "x": 108.0,
+    "y": 4.0
+   },
+   "max_tasks": 4
+  }
+ ],
+ "tasks": [
+  {
+   "id": "t01",
+   "name": "Unload sugar pallets from truck",
+   "phase_id": "p1",
+   "x": 5.0,
+   "y": 12.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "forklift_stacker",
+    "forklift_pallet"
+   ]
+  },
+  {
+   "id": "t02",
+   "name": "Unload PET-preform gaylords",
+   "phase_id": "p1",
+   "x": 5.0,
+   "y": 24.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "forklift_pallet",
+    "forklift_stacker"
+   ]
+  },
+  {
+   "id": "t03",
+   "name": "Put caps & labels away in raw store",
+   "phase_id": "p1",
+   "x": 20.0,
+   "y": 40.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "forklift_stacker"
+   ]
+  },
+  {
+   "id": "t04",
+   "name": "Verify inbound labels & lot numbers",
+   "phase_id": "p1",
+   "x": 8.0,
+   "y": 18.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "wheeled_humanoid",
+    "biped_humanoid"
+   ]
+  },
+  {
+   "id": "t05",
+   "name": "Feed preforms to the blow-moulder",
+   "phase_id": "p1",
+   "x": 45.0,
+   "y": 20.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "amr_jacking",
+    "amr_lift"
+   ]
+  },
+  {
+   "id": "t06",
+   "name": "Deliver sugar pallet to the syrup room",
+   "phase_id": "p2",
+   "x": 38.0,
+   "y": 44.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "amr_jacking",
+    "amr_latent_forklift"
+   ]
+  },
+  {
+   "id": "t07",
+   "name": "Tip sugar sacks into the dissolver",
+   "phase_id": "p2",
+   "x": 40.0,
+   "y": 47.0,
+   "team_size": 2,
+   "priority": 3.0,
+   "allowed_types": [
+    "wheeled_humanoid",
+    "biped_humanoid"
+   ]
+  },
+  {
+   "id": "t08",
+   "name": "Dose flavour concentrate",
+   "phase_id": "p2",
+   "x": 43.0,
+   "y": 45.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "composite_cnc",
+    "composite_semi"
+   ]
+  },
+  {
+   "id": "t09",
+   "name": "Restock the cap hopper",
+   "phase_id": "p2",
+   "x": 65.0,
+   "y": 33.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "composite_cnc"
+   ]
+  },
+  {
+   "id": "t10",
+   "name": "Bring label reels line-side",
+   "phase_id": "p2",
+   "x": 72.0,
+   "y": 24.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "amr_lift"
+   ]
+  },
+  {
+   "id": "t11",
+   "name": "Splice a new label reel",
+   "phase_id": "p2",
+   "x": 72.0,
+   "y": 28.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "cobot_12kg"
+   ]
+  },
+  {
+   "id": "t12",
+   "name": "Patrol & inspect filler to labeller",
+   "phase_id": "p3",
+   "x": 62.0,
+   "y": 30.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "wheeled_humanoid",
+    "biped_humanoid"
+   ]
+  },
+  {
+   "id": "t13",
+   "name": "Pull bottle samples at the filler",
+   "phase_id": "p3",
+   "x": 60.0,
+   "y": 34.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "composite_semi",
+    "composite_cnc"
+   ]
+  },
+  {
+   "id": "t14",
+   "name": "Brix & CO2 test in the QC lab",
+   "phase_id": "p3",
+   "x": 65.0,
+   "y": 52.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "cobot_5kg"
+   ]
+  },
+  {
+   "id": "t15",
+   "name": "Fill-level & cap-torque vision audit",
+   "phase_id": "p3",
+   "x": 66.0,
+   "y": 27.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "composite_semi",
+    "wheeled_humanoid",
+    "biped_humanoid"
+   ]
+  },
+  {
+   "id": "t16",
+   "name": "Swap the empty preform cart",
+   "phase_id": "p3",
+   "x": 45.0,
+   "y": 17.0,
+   "team_size": 1,
+   "priority": 1.0,
+   "allowed_types": [
+    "amr_lift",
+    "amr_jacking"
+   ]
+  },
+  {
+   "id": "t17",
+   "name": "Palletize finished cases",
+   "phase_id": "p4",
+   "x": 85.0,
+   "y": 30.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "cobot_25kg"
+   ]
+  },
+  {
+   "id": "t18",
+   "name": "Take full pallet to the stretch wrapper",
+   "phase_id": "p4",
+   "x": 92.0,
+   "y": 20.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "forklift_pallet",
+    "forklift_cb"
+   ]
+  },
+  {
+   "id": "t19",
+   "name": "Return empty pallets to the palletizer",
+   "phase_id": "p4",
+   "x": 84.0,
+   "y": 25.0,
+   "team_size": 1,
+   "priority": 1.0,
+   "allowed_types": [
+    "amr_lift",
+    "amr_latent_forklift"
+   ]
+  },
+  {
+   "id": "t20",
+   "name": "Label & scan the wrapped pallet",
+   "phase_id": "p4",
+   "x": 93.0,
+   "y": 23.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "wheeled_humanoid",
+    "biped_humanoid"
+   ]
+  },
+  {
+   "id": "t21",
+   "name": "Retrieve order pallet from the high-bay",
+   "phase_id": "p5",
+   "x": 100.0,
+   "y": 48.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "forklift_cb"
+   ]
+  },
+  {
+   "id": "t22",
+   "name": "Stage order pallet at the dock",
+   "phase_id": "p5",
+   "x": 112.0,
+   "y": 22.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "amr_latent_forklift",
+    "amr_jacking"
+   ]
+  },
+  {
+   "id": "t23",
+   "name": "Load the outbound truck",
+   "phase_id": "p5",
+   "x": 116.0,
+   "y": 14.0,
+   "team_size": 1,
+   "priority": 3.0,
+   "allowed_types": [
+    "forklift_pallet",
+    "forklift_cb"
+   ]
+  },
+  {
+   "id": "t24",
+   "name": "Check dock seal & load securing",
+   "phase_id": "p5",
+   "x": 116.0,
+   "y": 10.0,
+   "team_size": 1,
+   "priority": 2.0,
+   "allowed_types": [
+    "wheeled_humanoid",
+    "biped_humanoid"
+   ]
+  }
+ ],
+ "handovers": [
+  {
+   "predecessor_task_id": "t02",
+   "successor_task_id": "t05",
+   "meet_label": "Preforms: forklift -> AMR at the inbound buffer"
+  },
+  {
+   "predecessor_task_id": "t06",
+   "successor_task_id": "t07",
+   "meet_label": "Sugar pallet: AMR -> humanoids at the dissolver"
+  },
+  {
+   "predecessor_task_id": "t10",
+   "successor_task_id": "t11",
+   "meet_label": "Label reels: AMR -> labeller cobot"
+  },
+  {
+   "predecessor_task_id": "t13",
+   "successor_task_id": "t14",
+   "meet_label": "Bottle samples: composite robot -> lab cobot"
+  },
+  {
+   "predecessor_task_id": "t17",
+   "successor_task_id": "t18",
+   "meet_label": "Full pallet: palletizer cobot -> pallet truck"
+  },
+  {
+   "predecessor_task_id": "t21",
+   "successor_task_id": "t22",
+   "meet_label": "Order pallet: high-bay stacker -> latent forklift"
+  }
+ ],
+ "original_plan": {
+  "assignments": [
+   {
+    "task_id": "t01",
+    "robot_ids": [
+     "a9"
+    ]
+   },
+   {
+    "task_id": "t02",
+    "robot_ids": [
+     "a8"
+    ]
+   },
+   {
+    "task_id": "t03",
+    "robot_ids": [
+     "a8"
+    ]
+   },
+   {
+    "task_id": "t04",
+    "robot_ids": [
+     "a1"
+    ]
+   },
+   {
+    "task_id": "t05",
+    "robot_ids": [
+     "a12"
+    ]
+   },
+   {
+    "task_id": "t06",
+    "robot_ids": [
+     "a12"
+    ]
+   },
+   {
+    "task_id": "t07",
+    "robot_ids": [
+     "a1",
+     "a2"
+    ]
+   },
+   {
+    "task_id": "t08",
+    "robot_ids": [
+     "a7"
+    ]
+   },
+   {
+    "task_id": "t09",
+    "robot_ids": [
+     "a6"
+    ]
+   },
+   {
+    "task_id": "t10",
+    "robot_ids": [
+     "a11"
+    ]
+   },
+   {
+    "task_id": "t11",
+    "robot_ids": [
+     "a4"
+    ]
+   },
+   {
+    "task_id": "t12",
+    "robot_ids": [
+     "a1"
+    ]
+   },
+   {
+    "task_id": "t13",
+    "robot_ids": [
+     "a7"
+    ]
+   },
+   {
+    "task_id": "t14",
+    "robot_ids": [
+     "a3"
+    ]
+   },
+   {
+    "task_id": "t15",
+    "robot_ids": [
+     "a7"
+    ]
+   },
+   {
+    "task_id": "t16",
+    "robot_ids": [
+     "a12"
+    ]
+   },
+   {
+    "task_id": "t17",
+    "robot_ids": [
+     "a5"
+    ]
+   },
+   {
+    "task_id": "t18",
+    "robot_ids": [
+     "a10"
+    ]
+   },
+   {
+    "task_id": "t19",
+    "robot_ids": [
+     "a11"
+    ]
+   },
+   {
+    "task_id": "t20",
+    "robot_ids": [
+     "a2"
+    ]
+   },
+   {
+    "task_id": "t21",
+    "robot_ids": [
+     "a10"
+    ]
+   },
+   {
+    "task_id": "t22",
+    "robot_ids": [
+     "a13"
+    ]
+   },
+   {
+    "task_id": "t23",
+    "robot_ids": [
+     "a10"
+    ]
+   },
+   {
+    "task_id": "t24",
+    "robot_ids": [
+     "a2"
+    ]
+   }
+  ],
+  "kpis": {
+   "total_cost": 592.6,
+   "total_tour_distance": 704.6,
+   "tasks_covered": 24,
+   "open_tasks": 24,
+   "agents_used": 13,
+   "violations": []
+  },
+  "routes": [
+   {
+    "robot_id": "a1",
+    "phase_id": "p1",
+    "task_ids": [
+     "t04"
+    ],
+    "distance": 32.1
+   },
+   {
+    "robot_id": "a8",
+    "phase_id": "p1",
+    "task_ids": [
+     "t02",
+     "t03"
+    ],
+    "distance": 35.7
+   },
+   {
+    "robot_id": "a9",
+    "phase_id": "p1",
+    "task_ids": [
+     "t01"
+    ],
+    "distance": 9.4
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p1",
+    "task_ids": [
+     "t05"
+    ],
+    "distance": 69.1
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 43.2
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p2",
+    "task_ids": [
+     "t07"
+    ],
+    "distance": 60.5
+   },
+   {
+    "robot_id": "a4",
+    "phase_id": "p2",
+    "task_ids": [
+     "t11"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a6",
+    "phase_id": "p2",
+    "task_ids": [
+     "t09"
+    ],
+    "distance": 43.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p2",
+    "task_ids": [
+     "t08"
+    ],
+    "distance": 9.9
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p2",
+    "task_ids": [
+     "t10"
+    ],
+    "distance": 18.1
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p2",
+    "task_ids": [
+     "t06"
+    ],
+    "distance": 27.0
+   },
+   {
+    "robot_id": "a1",
+    "phase_id": "p3",
+    "task_ids": [
+     "t12"
+    ],
+    "distance": 27.8
+   },
+   {
+    "robot_id": "a3",
+    "phase_id": "p3",
+    "task_ids": [
+     "t14"
+    ],
+    "distance": 4.0
+   },
+   {
+    "robot_id": "a7",
+    "phase_id": "p3",
+    "task_ids": [
+     "t15",
+     "t13"
+    ],
+    "distance": 55.2
+   },
+   {
+    "robot_id": "a12",
+    "phase_id": "p3",
+    "task_ids": [
+     "t16"
+    ],
+    "distance": 29.8
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p4",
+    "task_ids": [
+     "t20"
+    ],
+    "distance": 58.2
+   },
+   {
+    "robot_id": "a5",
+    "phase_id": "p4",
+    "task_ids": [
+     "t17"
+    ],
+    "distance": 2.8
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p4",
+    "task_ids": [
+     "t18"
+    ],
+    "distance": 31.1
+   },
+   {
+    "robot_id": "a11",
+    "phase_id": "p4",
+    "task_ids": [
+     "t19"
+    ],
+    "distance": 12.0
+   },
+   {
+    "robot_id": "a2",
+    "phase_id": "p5",
+    "task_ids": [
+     "t24"
+    ],
+    "distance": 26.4
+   },
+   {
+    "robot_id": "a10",
+    "phase_id": "p5",
+    "task_ids": [
+     "t21",
+     "t23"
+    ],
+    "distance": 67.6
+   },
+   {
+    "robot_id": "a13",
+    "phase_id": "p5",
+    "task_ids": [
+     "t22"
+    ],
+    "distance": 37.6
+   }
+  ]
+ }
+}

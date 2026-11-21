@@ -1,0 +1,11 @@
+{
+ "schema_version": 1,
+ "generated_at": "2026-11-20T16:27:35+00:00",
+ "fortytwode_commit": "ec3a5356d7b445c910242e28bd940d52b74b9f04",
+ "solver": "CP-SAT",
+ "mission_name": "Simulated beverage plant (demo data)",
+ "scenario_ids": [
+  "amr-error-clean",
+  "cost-cascade"
+ ]
+}
