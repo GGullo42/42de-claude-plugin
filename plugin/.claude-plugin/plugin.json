@@ -1,12 +1,15 @@
 {
   "name": "42de",
+  "displayName": "42de mission re-planning (demo)",
   "version": "0.1.0",
   "description": "Demo of 42de mission re-planning for factory planners: when a robot fails mid-mission, Claude reads the alert and robot status, explains 42de's re-plan proposal and compares what-ifs. Simulated beverage-plant data; re-plans are real 42de CP-SAT output computed offline. Read-only: Claude never operates robots.",
   "author": {
-    "name": "42de"
+    "name": "42de GmbH",
+    "url": "https://42de.tech"
   },
   "homepage": "https://42de.tech",
   "documentationUrl": "https://github.com/GGullo42/42de-claude-plugin/tree/main/plugin#readme",
+  "repository": "https://github.com/GGullo42/42de-claude-plugin",
   "privacyPolicyUrl": "https://42de.tech/privacy/claude-demo",
   "supportUrl": "https://42de.tech/support",
   "license": "Apache-2.0",
